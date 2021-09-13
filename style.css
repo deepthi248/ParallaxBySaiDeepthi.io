@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap');
+
+body,margin{
+    /* resetting values  */
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    height: 100vh;
+    
+    /* Setting same font related   */
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #666;
+ 
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+/* Image1 in parallax */
+.mainImg{
+    background-image: url("https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    min-height: 100%;
+}
+.parallax2{
+    background-image: url("https://images.pexels.com/photos/5859092/pexels-photo-5859092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    min-height: 400px;
+}
+
+.parallax3{
+    background-image: url("https://images.pexels.com/photos/2521619/pexels-photo-2521619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    min-height: 400px;
+}
+
+/* setting common images styling */
+.mainImg,.parallax2,.parallax3{
+    position: relative;
+    
+    /* background image styling */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 
+    Parallax effect -To repeat -- change the fixed to scroll
+    
+    */
+    background-attachment: fixed;  
+    border-radius: 5px;
+}
+
+/* Styling the sections  */
+section{
+    text-align: center;
+    font-size: .9rem;
+    padding: 30px 80px 30px 80px;
+    overflow: hidden;
+    background-color: #F0F8FF;
+    color:#2a52be;
+}
+.section a{
+    text-decoration: none;
+    transition: 0.5s ease-out;
+}
+.section a:hover{
+
+    font-size: 1.1rem;
+
+}
+.subtitle{
+    font-size: 1rem;
+}
+.content{
+   position: absolute;
+    top: 50%;
+    width: 100%;
+    transition: transform(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    background-color:none; 
+
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
